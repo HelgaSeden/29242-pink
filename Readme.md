@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга](https://up.htmlacademy.ru/adaptive/14/user/29242).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Распономарев](https://up.htmlacademy.ru/adaptive/14/user/64492).
 
 ---
 
