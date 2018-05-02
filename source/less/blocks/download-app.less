@@ -53,11 +53,40 @@
   display: none;
 }
 
+@media (max-width: 660px) {
+.download-app .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 @media (min-width: @tablet-width) {
+  .download-app {
+    background-color: @color-dark-blue;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 458px;
+  }
+
+  .download-app .container {
+    display: flex;
+  }
+
+  .download-app__right {
+    align-self: flex-end;
+    width: 50%;
+    margin-left: -15%;
+    z-index: 0;
+  }
+  .download-app__left {
+    width: 50%;
+    z-index: 1;
+  }
+
   .download-app__wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
     max-width: 300px;
     z-index: 1;
     background-color: transparent;
