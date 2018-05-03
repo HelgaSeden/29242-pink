@@ -1,3 +1,7 @@
+.page-header {
+  background-color: @color-dark-blue;
+}
+
 .page-header .container {
   display: flex;
   justify-content: space-between;
@@ -13,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   height: 64px;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -31,12 +36,22 @@
 .page-header__title h2 {
   font-size: @font-size-bigger;
   font-weight: 300;
+  line-height: 1.2;
   color: @color-white;
+  text-align: center;
+  width: 280px;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
     min-height: 110px;
+  }
+
+  .page-header__title h2 {
+    font-size: 50px;
+    line-height: 1;
+    width: 620px;
   }
 }
 
@@ -54,6 +69,10 @@
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header__title h2 {
+    width: 1160px;
   }
 }
 
