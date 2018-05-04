@@ -61,6 +61,7 @@
   background-repeat: no-repeat;
   background-position: 50% bottom;
   background-size: 320px auto;
+}
 
 .contacts__map-wrapper::before {
   content: "";
@@ -71,11 +72,15 @@
   z-index: 1;
 }
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .contacts__map {
     height: 380px;
     background-image: url("../img/bg-map-mobile@1x.png");
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .contacts__map {
     height: 525px;
   }
+}
