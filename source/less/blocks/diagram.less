@@ -1,0 +1,50 @@
+@media (max-width: 660px) {
+  .diagram {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .diagram .container {
+    display: flex;
+    padding-top: 60px;
+  }
+
+  .diagram {
+    display: flex;
+    justify-content: flex-end;
+    height: 335px;
+    width: auto;
+    padding: 0 20px;
+
+  &__right {
+    width: 50%;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  &__description {
+    color: @color-dark-blue;
+    width: 305px;
+  }
+
+  &__link {
+    color: @color-pink;
+    text-decoration: underline;
+  }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .diagram {
+    background-color: rgb(242, 242, 242);
+
+  &__description {
+    font-size: @font-size-big;
+    width: 521px;
+  }
+  }
+}
