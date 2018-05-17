@@ -46,14 +46,15 @@ td {
   background-color: @color-white;
 }
 
-tr:not(:first-child), td {
+tr:not(:first-child),
+td {
   border: 2px solid #e5e5e5;
 }
 
 @media (min-width: 320px) {
   .price-table__header {
-  width: 210px;
-  height: 85px;
+    width: 210px;
+    height: 85px;
   }
 }
 
@@ -110,7 +111,7 @@ tr:not(:first-child), td {
     &__header {
       width: 144px;
       height: 98px;
-      padding-top: 0px;
+      padding-top: 0;
     }
 
     &__header-title {
