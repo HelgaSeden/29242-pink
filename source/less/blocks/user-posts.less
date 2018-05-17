@@ -55,7 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: -5px 0 50px 0;
-    padding: 22px 21px 18px 14px;
+    padding: 23px 21px 18px 27px;
   }
 
   .user-posts--start .user-posts__author {
@@ -94,7 +94,7 @@
     width: 265px;
     height: 113px;
     margin: -4px 0 22px 0;
-    padding: 20px 8px 18px 14px;
+    padding: 20px 8px 18px 28px;
   }
 
   .user-posts__like-container {
@@ -118,6 +118,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .user-posts--start img {
     height: 506px;
   }

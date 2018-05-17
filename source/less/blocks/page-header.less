@@ -4,7 +4,7 @@
 
 .page-header .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .page-header__logo {
@@ -19,17 +19,6 @@
   align-items: center;
   padding: 16px 0;
   width: 100%;
-}
-
-.page-header__toggle {
-  background: url("../img/icon-menu-burger.svg") no-repeat;
-  border: none;
-  width: 50px;
-  height: 25px;
-  margin-right: 20px;
-  margin-top: -4px;
-  cursor: pointer;
-  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -52,6 +41,8 @@
 
   .page-header .container {
     min-width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .page-header {

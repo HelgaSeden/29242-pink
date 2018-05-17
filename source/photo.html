@@ -11,15 +11,15 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__wrapper">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo">
             <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
           </a>
           <h1 class="visually-hidden">Пинк - это мобильное приложение для раскрашивания серых будней в розовый цвет.</h1>
-          <button class="page-header__toggle" type="button">
+        </div>
+        <nav class="main-nav main-nav--opened main-nav-nojs">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-        </div>
-        <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__site-list">
               <li class="main-nav__item">
@@ -67,101 +67,103 @@
           </section>
         </div>
         <div class="container page-main__container">
-          <section class="user-posts">
-            <div class="user-posts__photo">
-              <img src="../img/photo-car-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
-            <div class="user-posts__wrapper user-posts__wrapper--wrap">
-              <span class="user-posts__author">Левон</span>
-              <span class="user-posts__time">(5 часов назад)</span>
-              <p class="user-posts__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="user-posts__like-container">
-                <button class="user-posts__like" type="button">
-                  <span class="visually-hidden">Нравится</span>
-                </button>
-                <span class="user-posts__like-сounter">Нравится: 356</span>
+          <section class="posts-list">
+            <article class="user-posts">
+              <div class="user-posts__photo">
+                <img src="../img/photo-car-mobile@1x.jpg" alt="Фотография пользователя">
               </div>
-            </div>
-          </section>
-          <section class="user-posts">
-            <div class="user-posts__photo">
-              <img src="../img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" >
-            </div>
-            <div class="user-posts__wrapper user-posts__wrapper--wrap">
-              <span class="user-posts__author">Антон</span>
-              <span class="user-posts__time">(12 часов назад)</span>
-              <p class="user-posts__comment">Соседи будут рады!</p>
-              <div class="user-posts__like-container">
-                <button class="user-posts__like" type="button">
-                  <span class="visually-hidden">Нравится</span>
-                </button>
-                <span class="user-posts__like-сounter">Нравится: 666</span>
+              <div class="user-posts__wrapper user-posts__wrapper--wrap">
+                <span class="user-posts__author">Левон</span>
+                <span class="user-posts__time">(5 часов назад)</span>
+                <p class="user-posts__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="user-posts__like-container">
+                  <button class="user-posts__like" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <span class="user-posts__like-сounter">Нравится: 356</span>
+                </div>
               </div>
-            </div>
-          </section>
-          <section class="user-posts">
-            <div class="user-posts__photo">
-              <img src="../img/photo-window-mobile@1x.jpg" alt="Фотография пользователя">
-            </div>
-            <div class="user-posts__wrapper user-posts__wrapper--wrap">
-              <span class="user-posts__author">Борис</span>
-              <span class="user-posts__time">(20 часов назад)</span>
-              <p class="user-posts__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="user-posts__like-container">
-                <button class="user-posts__like" type="button">
-                  <span class="visually-hidden">Нравится</span>
-                </button>
-                <span class="user-posts__like-сounter">Нравится: 215</span>
+            </article>
+            <article class="user-posts">
+              <div class="user-posts__photo">
+                <img src="../img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" >
               </div>
-            </div>
-          </section>
-          <section class="user-posts">
-            <div class="user-posts__photo">
-              <img src="../img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" >
-            </div>
-            <div class="user-posts__wrapper user-posts__wrapper--wrap">
-              <span class="user-posts__author">Сергей</span>
-              <span class="user-posts__time">(25 часов назад)</span>
-              <p class="user-posts__comment">Самая кубанская в мире!</p>
-              <div class="user-posts__like-container">
-                <button class="user-posts__like" type="button">
-                  <span class="visually-hidden">Нравится</span>
-                </button>
-                <span class="user-posts__like-сounter">Нравится: 4</span>
+              <div class="user-posts__wrapper user-posts__wrapper--wrap">
+                <span class="user-posts__author">Антон</span>
+                <span class="user-posts__time">(12 часов назад)</span>
+                <p class="user-posts__comment">Соседи будут рады!</p>
+                <div class="user-posts__like-container">
+                  <button class="user-posts__like" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <span class="user-posts__like-сounter">Нравится: 666</span>
+                </div>
               </div>
-            </div>
-          </section>
-          <section class="user-posts">
-            <div class="user-posts__photo">
-              <img src="../img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" >
-            </div>
-            <div class="user-posts__wrapper user-posts__wrapper--wrap">
-              <span class="user-posts__author">Максим</span>
-              <span class="user-posts__time">(40 часов назад)</span>
-              <p class="user-posts__comment">Где снег-то?</p>
-              <div class="user-posts__like-container">
-                <button class="user-posts__like" type="button">
-                  <span class="visually-hidden">Нравится</span>
-                </button>
-                <span class="user-posts__like-сounter">Нравится: 150</span>
+            </article>
+            <article class="user-posts">
+              <div class="user-posts__photo">
+                <img src="../img/photo-window-mobile@1x.jpg" alt="Фотография пользователя">
               </div>
-            </div>
-          </section>
-          <section class="user-posts">
-            <div class="user-posts__photo">
-              <img src="../img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" >
-            </div>
-            <div class="user-posts__wrapper user-posts__wrapper--wrap">
-              <span class="user-posts__author">Надежда</span>
-              <span class="user-posts__time">(45 часов назад)</span>
-              <p class="user-posts__comment">Всем GM и взаимные лайки!</p>
-              <div class="user-posts__like-container">
-                <button class="user-posts__like" type="button">
-                  <span class="visually-hidden">Нравится</span>
-                </button>
-                <span class="user-posts__like-сounter">Нравится: 2560</span>
+              <div class="user-posts__wrapper user-posts__wrapper--wrap">
+                <span class="user-posts__author">Борис</span>
+                <span class="user-posts__time">(20 часов назад)</span>
+                <p class="user-posts__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="user-posts__like-container">
+                  <button class="user-posts__like" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <span class="user-posts__like-сounter">Нравится: 215</span>
+                </div>
               </div>
-            </div>
+            </article>
+            <article class="user-posts">
+              <div class="user-posts__photo">
+                <img src="../img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" >
+              </div>
+              <div class="user-posts__wrapper user-posts__wrapper--wrap">
+                <span class="user-posts__author">Сергей</span>
+                <span class="user-posts__time">(25 часов назад)</span>
+                <p class="user-posts__comment">Самая кубанская в мире!</p>
+                <div class="user-posts__like-container">
+                  <button class="user-posts__like" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <span class="user-posts__like-сounter">Нравится: 4</span>
+                </div>
+              </div>
+            </article>
+            <article class="user-posts">
+              <div class="user-posts__photo">
+                <img src="../img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" >
+              </div>
+              <div class="user-posts__wrapper user-posts__wrapper--wrap">
+                <span class="user-posts__author">Максим</span>
+                <span class="user-posts__time">(40 часов назад)</span>
+                <p class="user-posts__comment">Где снег-то?</p>
+                <div class="user-posts__like-container">
+                  <button class="user-posts__like" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <span class="user-posts__like-сounter">Нравится: 150</span>
+                </div>
+              </div>
+            </article>
+            <article class="user-posts">
+              <div class="user-posts__photo">
+                <img src="../img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" >
+              </div>
+              <div class="user-posts__wrapper user-posts__wrapper--wrap">
+                <span class="user-posts__author">Надежда</span>
+                <span class="user-posts__time">(45 часов назад)</span>
+                <p class="user-posts__comment">Всем GM и взаимные лайки!</p>
+                <div class="user-posts__like-container">
+                  <button class="user-posts__like" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <span class="user-posts__like-сounter">Нравится: 2560</span>
+                </div>
+              </div>
+            </article>
           </section>
         </div>
         <div class="container">
