@@ -73,9 +73,11 @@
                 <img src="../img/photo-car-mobile@1x.jpg" alt="Фотография пользователя">
               </div>
               <div class="user-posts__wrapper user-posts__wrapper--wrap">
-                <span class="user-posts__author">Левон</span>
-                <span class="user-posts__time">(5 часов назад)</span>
-                <p class="user-posts__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="user-posts__column">
+                  <span class="user-posts__author">Левон</span>
+                  <span class="user-posts__time">(5 часов назад)</span>
+                  <p class="user-posts__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </div>
                 <div class="user-posts__like-container">
                   <button class="user-posts__like" type="button">
                     <span class="visually-hidden">Нравится</span>
@@ -89,9 +91,11 @@
                 <img src="../img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" >
               </div>
               <div class="user-posts__wrapper user-posts__wrapper--wrap">
-                <span class="user-posts__author">Антон</span>
-                <span class="user-posts__time">(12 часов назад)</span>
-                <p class="user-posts__comment">Соседи будут рады!</p>
+                <div class="user-posts__column">
+                  <span class="user-posts__author">Антон</span>
+                  <span class="user-posts__time">(12 часов назад)</span>
+                  <p class="user-posts__comment">Соседи будут рады!</p>
+                </div>
                 <div class="user-posts__like-container">
                   <button class="user-posts__like" type="button">
                     <span class="visually-hidden">Нравится</span>
@@ -105,9 +109,11 @@
                 <img src="../img/photo-window-mobile@1x.jpg" alt="Фотография пользователя">
               </div>
               <div class="user-posts__wrapper user-posts__wrapper--wrap">
-                <span class="user-posts__author">Борис</span>
-                <span class="user-posts__time">(20 часов назад)</span>
-                <p class="user-posts__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="user-posts__column">
+                  <span class="user-posts__author">Борис</span>
+                  <span class="user-posts__time">(20 часов назад)</span>
+                  <p class="user-posts__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                </div>
                 <div class="user-posts__like-container">
                   <button class="user-posts__like" type="button">
                     <span class="visually-hidden">Нравится</span>
@@ -121,9 +127,11 @@
                 <img src="../img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" >
               </div>
               <div class="user-posts__wrapper user-posts__wrapper--wrap">
-                <span class="user-posts__author">Сергей</span>
-                <span class="user-posts__time">(25 часов назад)</span>
-                <p class="user-posts__comment">Самая кубанская в мире!</p>
+                <div class="user-posts__column">
+                  <span class="user-posts__author">Сергей</span>
+                  <span class="user-posts__time">(25 часов назад)</span>
+                  <p class="user-posts__comment">Самая кубанская в мире!</p>
+                </div>
                 <div class="user-posts__like-container">
                   <button class="user-posts__like" type="button">
                     <span class="visually-hidden">Нравится</span>
@@ -137,9 +145,11 @@
                 <img src="../img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" >
               </div>
               <div class="user-posts__wrapper user-posts__wrapper--wrap">
-                <span class="user-posts__author">Максим</span>
-                <span class="user-posts__time">(40 часов назад)</span>
-                <p class="user-posts__comment">Где снег-то?</p>
+                <div class="user-posts__column">
+                  <span class="user-posts__author">Максим</span>
+                  <span class="user-posts__time">(40 часов назад)</span>
+                  <p class="user-posts__comment">Где снег-то?</p>
+                </div>
                 <div class="user-posts__like-container">
                   <button class="user-posts__like" type="button">
                     <span class="visually-hidden">Нравится</span>
@@ -153,9 +163,11 @@
                 <img src="../img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" >
               </div>
               <div class="user-posts__wrapper user-posts__wrapper--wrap">
-                <span class="user-posts__author">Надежда</span>
-                <span class="user-posts__time">(45 часов назад)</span>
-                <p class="user-posts__comment">Всем GM и взаимные лайки!</p>
+                <div class="user-posts__column">
+                  <span class="user-posts__author">Надежда</span>
+                  <span class="user-posts__time">(45 часов назад)</span>
+                  <p class="user-posts__comment">Всем GM и взаимные лайки!</p>
+                </div>
                 <div class="user-posts__like-container">
                   <button class="user-posts__like" type="button">
                     <span class="visually-hidden">Нравится</span>
@@ -264,5 +276,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

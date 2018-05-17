@@ -42,6 +42,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .user-posts--start {
     margin: 76px auto 0;
     width: 100%;
@@ -69,6 +75,7 @@
 
   .user-posts--start .user-posts__comment {
     order: 5;
+    margin-bottom: 8px;
   }
 
   .user-posts--start .user-posts__like {
@@ -91,6 +98,8 @@
   }
 
   .user-posts__wrapper--wrap {
+    display: flex;
+    flex-wrap: wrap;
     width: 265px;
     height: 113px;
     margin: -4px 0 22px 0;
@@ -100,11 +109,16 @@
   .user-posts__like-container {
     display: flex;
     justify-content: space-between;
-    margin: 13px 24px 0 -15px;
+    align-self: flex-end;
+    width: 260px;
+    margin: 0 24px 5px -17px;
   }
 
   .user-posts__like {
     order: 2;
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
   }
 
   .user-posts__like-сounter {
@@ -114,6 +128,11 @@
   .user-posts__time {
     font-size: 12px;
     text-transform: uppercase;
+  }
+
+  .user-posts__comment {
+    margin-top: -1px;
+    margin-left: -1px;
   }
 }
 
@@ -145,6 +164,6 @@
   .user-posts__wrapper--wrap {
     width: initial;
     margin: 0 0 57px;
-    padding: 17px 8px 18px 27px;
+    padding: 16px 8px 18px 27px;
   }
 }
