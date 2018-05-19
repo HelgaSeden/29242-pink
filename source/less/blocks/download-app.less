@@ -2,25 +2,28 @@
   background-color: @color-dark-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 2px -67px;
-  background-size: 320px;
-  height: 667px;
+  background-position: 2px -66px;
+  background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: cover;
+      background-position: center -107px;
+    }
 }
 
 .download-app__wrapper {
   background-color: #1d2631;
   min-height: 212px;
   text-align: center;
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 15px;
-  margin-top: -6px;
+  padding: 43px 20px 15px;
+  margin-top: -5px;
 }
 
 .download-app__wrapper-list {
   display: block;
   position: relative;
+  margin-top: 35px;
 }
 
 .download-app__list {
@@ -36,7 +39,8 @@
 }
 
 .download-app__right {
-  margin-top: 109px;
+  max-width: 80%;
+  margin-top: 113px;
 }
 
 .download-app__platform-icon {
@@ -74,12 +78,12 @@
 
 @media (min-width: @tablet-width) {
   .download-app {
-    height: 618px;
+    height: 631px;
     background-color: @color-dark-blue;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/bg-back-tablet@1x.jpg"), url("../img/bg-back-tablet@2x.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: auto 458px;
+    background-position: center -96px;
+    background-size: auto;
   }
 
   .download-app .container {
@@ -90,8 +94,9 @@
   .download-app__right {
     background-color: transparent;
     align-self: flex-end;
-    width: 50%;
-    margin-left: -15%;
+    max-width: initial;
+    margin-top: 89px;
+    margin-left: -55%;
     z-index: 0;
   }
 
@@ -121,8 +126,8 @@
   }
 
   .download-app__button {
-    width: 301px;
-    margin: -7px -20px 34px;
+    padding-bottom: 18px;
+    margin: -7px -21px -4px;
   }
 
   .download-app__list {
@@ -139,6 +144,9 @@
 @media (min-width: @desktop-width) {
   .download-app {
     height: 743px;
+    background: url("../img/bg-back-desktop@1x.jpg"), url("../img/bg-back-desktop@2x.jpg");
+    background-position: center -108px;
+    background-size: auto;
   }
 
   .download-app__wrapper {

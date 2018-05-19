@@ -84,7 +84,11 @@
             </div>
           </div>
           <div class="download-app__right">
-          <img src="img/iphone-hand-mobile@1x.png" alt="Приложение Пинк">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
+              <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" alt="Приложение Пинк">
+            </picture>
           </div>
         </div>
       </section>
