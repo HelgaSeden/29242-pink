@@ -43,7 +43,7 @@
   left: 0;
   right: 0;
   top: 0;
-  margin: 0;
+  margin: 12px 0 0 0;
   padding: 0;
   text-align: center;
   background-color: rgb(40, 54, 69);
@@ -83,10 +83,6 @@
   }
 }
 
-.main-nav--opened {
-  margin-top: 15px;
-}
-
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
@@ -94,7 +90,7 @@
     position: absolute;
     width: 36px;
     height: 4px;
-    margin-top: -34px;
+    margin-top: -23px;
     background-color: #ffffff;
   }
 
@@ -136,8 +132,12 @@
     margin: 0;
   }
 
+  .main-nav__site-list {
+    margin-top: 33px;
+  }
+
   .main-nav__toggle {
-    padding-left: 45px;
+    padding-left: 6px;
   }
 
   .main-nav--closed .main-nav__toggle::before {
@@ -159,7 +159,7 @@
   }
 
   .main-nav__item {
-    border: transparent;
+    border: 3px solid transparent;
     text-transform: none;
     letter-spacing: 0.4px;
 
@@ -168,7 +168,7 @@
     }
 
     &:last-child {
-      border-bottom: transparent;
+      border-bottom: 3px solid transparent;
     }
   }
 

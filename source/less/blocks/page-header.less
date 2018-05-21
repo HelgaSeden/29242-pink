@@ -1,9 +1,14 @@
 .page-header {
   position: relative;
   margin-bottom: -70px;
-  padding: 20px 0 13px;
+  padding: 20px 0 15px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--nojs {
+  background-color: @color-dark-blue;
+  padding-bottom: 0;
 }
 
 .page-header--menu-opened {
@@ -31,10 +36,19 @@
 @media (min-width: @tablet-width) {
   .page-header {
     padding: 24px 0 34px;
+    margin-bottom: -111px;
+  }
+
+  .page-header--nojs {
+    padding-bottom: 0;
+  }
+
+  .page-header .container {
+    width: 100%;
   }
 
   .page-header__logo {
-    margin-left: 1px;
+    margin-left: 20px;
   }
 
   .page-header__toggle {
@@ -51,6 +65,7 @@
 
   .page-header .container {
     flex-direction: row;
+    width: 960px;
   }
 
   .page-header {
