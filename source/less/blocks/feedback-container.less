@@ -108,7 +108,7 @@ input::placeholder {
   margin-right: 29px;
 }
 
-input[type=checkbox]:checked + label {
+input[type="checkbox"]:checked + label {
   content: "";
   display: block;
   width: 35px;
@@ -120,16 +120,6 @@ input[type=checkbox]:checked + label {
 
 .checkbox::before:focus {
   border: 2px solid @color-pink;
-}
-
-.checkbox:checkbox + label {
-  position: absolute;
-  display: block;
-  width: 35px;
-  height: 35px;
-  margin-top: -29px;
-  margin-left: 9px;
-  background: url("../img/icon-yes.svg") no-repeat;
 }
 
 .contact {
@@ -306,7 +296,7 @@ textarea::placeholder {
       padding: 3px 0 0 17px;
     }
 
-    & .feedback-container__list-item--phone:after {
+    & .feedback-container__list-item--phone::after {
       content: "";
       position: absolute;
       width: 63px;
@@ -319,7 +309,7 @@ textarea::placeholder {
       margin-left: 435px;
     }
 
-    & .feedback-container__list-item--email:after {
+    & .feedback-container__list-item--email::after {
       content: "";
       position: absolute;
       width: 63px;
@@ -470,8 +460,8 @@ textarea::placeholder {
       margin-left: 338px;
     }
 
-    & .feedback-container__list-item--email:after,
-    & .feedback-container__list-item--phone:after {
+    & .feedback-container__list-item--email::after,
+    & .feedback-container__list-item--phone::after {
       width: 59px;
       height: 58px;
       margin-top: -46px;
