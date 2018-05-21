@@ -1,7 +1,6 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  margin-top: -70px;
 }
 
 .main-nav__item {
@@ -46,7 +45,6 @@
   display: block;
   align-self: flex-end;
   width: 112px;
-  height: 70px;
   padding-right: 35px;
   cursor: pointer;
   border: none;
@@ -56,7 +54,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 24px;
   width: 52px;
   height: 26px;
   background: url("../img/icon-menu-burger.svg") no-repeat;
@@ -75,6 +73,7 @@
     position: absolute;
     width: 36px;
     height: 4px;
+    margin-top: -34px;
     background-color: #ffffff;
   }
 
@@ -114,7 +113,6 @@
   .main-nav {
     width: auto;
     margin: 0;
-    margin-top: -69px;
   }
 
   .main-nav__toggle {
@@ -135,6 +133,30 @@
     margin-top: -2px;
   }
 
+  .main-nav a:hover {
+    color: @color-white;
+  }
+
+  .main-nav__item:hover {
+    border-bottom: 3px solid @color-white;
+  }
+
+  .main-nav__item:last-child:hover {
+    border-bottom: 3px solid @color-white;
+  }
+
+  .main-nav__item {
+    border: none;
+
+    &:first-child {
+      border-top: transparent;
+    }
+
+    &:last-child {
+      border-bottom: transparent;
+    }
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -145,14 +167,8 @@
     align-items: center;
     min-width: 622px;
     background-color: transparent;
-    margin-right: 2px;
+    margin-right: 9px;
     margin-top: 26px;
-  }
-
-  .main-nav__item,
-  .main-nav__item:first-child,
-  .main-nav__item:last-child {
-    border: none;
   }
 
   .main-nav__item {
