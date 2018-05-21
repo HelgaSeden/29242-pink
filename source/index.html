@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--menu-opened">
       <div class="container">
         <div class="page-header__wrapper">
           <a class="page-header__logo">
@@ -19,8 +19,8 @@
           </a>
           <h1 class="visually-hidden">Пинк - это мобильное приложение для раскрашивания серых будней в розовый цвет.</h1>
         </div>
-        <nav class="main-nav main-nav--opened main-nav-nojs">
-          <button class="main-nav__toggle" type="button">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle main-nav__toggle--hidden" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
@@ -159,6 +159,8 @@
                 <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
               </blockquote>
             </div>
+            <button class="reviews__button reviews__button--left" type="button"></button>
+            <button class="reviews__button reviews__button--right" type="button"></button>
             <p class="reviews__toggles">
               <button class="reviews__toggle reviews__toggle--active" type="button"><span class="visually-hidden">1</span></button>
               <button class="reviews__toggle" type="button"><span class="visually-hidden">2</span></button>
@@ -336,21 +338,6 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

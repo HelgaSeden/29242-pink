@@ -1,8 +1,13 @@
 .page-header {
-  position: absolute;
+  position: relative;
+  margin-bottom: -70px;
   padding: 20px 0 13px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header--menu-opened {
+  background-color: @color-dark-blue;
 }
 
 .page-header .container {
@@ -45,9 +50,7 @@
   }
 
   .page-header .container {
-    min-width: 940px;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .page-header {

@@ -149,15 +149,21 @@
 
 @media (min-width: @desktop-width) {
   .download-app {
-    height: 853px;
-    background-image: url("../img/bg-back-desktop@1x.jpg"), url("../img/bg-back-desktop@2x.jpg");
+    height: 814px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center -1px;
+    background-position: center -39px;
     background-size: auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
+      background-size: 2552px 850px;
+      background-position: center -26px;
+    }
   }
 
   .download-app__wrapper {
-    margin-top: 92px;
+    margin-top: 53px;
     margin-left: -30px;
   }
 
@@ -186,7 +192,7 @@
   }
 
   .download-app__right {
-    margin-top: 210px;
+    margin-top: 170px;
     margin-left: -59%;
     transform: translateX(11%);
   }
