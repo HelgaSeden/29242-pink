@@ -41,12 +41,19 @@
 }
 
 .price-table__check-yes {
+  position: absolute;
   width: 32px;
+  height: 53px;
+  margin-top: -33px;
+  margin-left: 62px;
+  fill: rgb(61, 198, 68);
 }
 
-td img {
-  margin-left: 63px;
-  margin-top: 8px;
+.price-table__check-no {
+  position: absolute;
+  width: 28px;
+  height: 61px;
+  fill: rgb(242, 91, 38);
 }
 
 td {
@@ -77,6 +84,7 @@ td {
 
   td {
     width: 140px;
+    height: 40px;
     padding-bottom: 4px;
   }
 
@@ -95,6 +103,11 @@ td {
     width: 154px;
     height: 75px;
     padding-top: 5px;
+  }
+
+  .price-table__check-no {
+    margin-left: 64px;
+    margin-top: -29px;
   }
 
   .price-table__header-price {
@@ -138,6 +151,11 @@ td {
       font-size: @font-size-big;
       letter-spacing: normal;
     }
+  }
+
+  .price-table__check-yes {
+    margin-top: -33px;
+    margin-left: 62px;
   }
 
   tr {
