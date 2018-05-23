@@ -16,12 +16,12 @@ navToggle.addEventListener('click', function() {
     siteList.classList.remove('main-nav__site-list--hidden');
     navMain.classList.add('main-nav--opened');
     pageHeader.classList.add('page-header--menu-opened');
-    toggleBtn.classList.add('.main-nav__toggle-btn--hidden');
+    toggleBtn.classList.add('main-nav__toggle-btn--hidden');
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
     siteList.classList.add('main-nav__site-list--hidden');
     pageHeader.classList.remove('page-header--menu-opened');
-    toggleBtn.classList.remove('.main-nav__toggle-btn--hidden');
+    toggleBtn.classList.remove('main-nav__toggle-btn--hidden');
   }
 });
