@@ -57,10 +57,27 @@
 .main-nav__toggle {
   display: block;
   align-self: flex-end;
-  padding-right: 35px;
+  padding-right: 20px;
+  margin-top: -31px;
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.main-nav__toggle-btn--closed {
+  display: none;
+}
+
+.main-nav__toggle-btn {
+  fill: @color-white;
+}
+
+.main-nav__toggle-btn:hover {
+  fill: @color-pink;
+}
+
+.main-nav__toggle-btn:active {
+  opacity: 0.3;
 }
 
 .main-nav__toggle--hidden {
@@ -87,9 +104,14 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: @color-pink;
+  }
+
   &:active::before,
   &:active::after {
-    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
   }
 }
 
