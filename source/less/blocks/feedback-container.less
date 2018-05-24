@@ -292,11 +292,12 @@ textarea::placeholder {
     }
 
     & .feedback-container__list {
-      padding-top: 12px;
+      padding-top: 11px;
+      padding-bottom: 34px;
     }
 
     & .feedback-container__list-item {
-      padding-bottom: 40px;
+      padding-bottom: 75px;
     }
   }
 
@@ -314,17 +315,19 @@ textarea::placeholder {
   }
 
   .description-radio {
-    margin-left: 58px;
+    position: absolute;
+    left: 0;
+    margin-left: 139px;
     margin-top: 6px;
   }
 
   .description-radio::before {
-    margin-left: 80px;
+    margin-left: -59px;
     margin-top: -4px;
   }
 
   input[type="radio"]:checked + .description-radio::after {
-    margin-left: 91px;
+    margin-left: -47px;
     margin-top: 1px;
   }
 
@@ -394,17 +397,10 @@ textarea::placeholder {
     }
   }
 
-  .description {
-    margin-left: 58px;
-  }
-
-  .description::before {
-    margin-left: -58px;
-  }
-
-  input[type="checkbox"]:checked + .description::after {
-    margin-left: -49px;
-    transform: translateY(-208%) rotate(-45deg);
+  .feedback-container__achievement .description {
+    position: absolute;
+    left: 0;
+    margin-left: 139px;
   }
 
   .feedback-container__achievement {
@@ -417,17 +413,22 @@ textarea::placeholder {
       margin-bottom: 7px;
     }
 
+    & .feedback-container__list-item {
+      padding-bottom: 82px;
+    }
+
     & .feedback-container__title {
       background-color: @color-white;
       margin: -46px 71px 0;
     }
 
     & .description::before {
-      margin-left: 79px;
+      left: 0;
+      margin-left: -60px;
     }
 
     & input[type="checkbox"]:checked + .description::after {
-      margin-left: 89px;
+      margin-left: -50px;
     }
   }
 
@@ -516,27 +517,28 @@ textarea::placeholder {
     }
 
     & .feedback-container__list {
-      padding-left: 73px;
-      padding-top: 32px;
+      padding: 32px 0 33px 74px;
     }
 
     & .feedback-container__list-item {
-      padding-bottom: 38px;
+      padding-bottom: 74px;
+    }
+
+    & .description-radio {
+      margin-top: 4px;
+      margin-left: 59px;
+      left: 59%;
     }
 
     & .description-radio::before {
-      margin-left: 110px;
-      left: 50%;
+      margin-top: -5px;
+      margin-left: -60px;
     }
 
     & input[type="radio"]:checked + .description-radio::after {
-      margin-left: 122px;
-      left: 50%;
+      margin-left: -48px;
+      margin-top: 0;
     }
-  }
-
-  .description-radio {
-    margin-left: 60px;
   }
 
   .feedback-container__user-contacts {
