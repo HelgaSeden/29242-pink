@@ -51,13 +51,14 @@
 
 @media (min-width: @tablet-width) {
   .user-posts__panorama {
-    width: 660px;
-    margin-left: -21px;
+    width: 960px;
+    margin-left: -170px;
   }
 
   .user-posts--start {
     margin: 76px auto 0;
     width: 100%;
+    overflow: hidden;
   }
 
   .user-posts--start img {
@@ -146,8 +147,12 @@
 
 @media (min-width: @desktop-width) {
   .user-posts__panorama {
-    width: 1200px;
-    margin-left: -121px;
+    width: 960px;
+    margin-left: 0;
+  }
+
+  .user-posts--start {
+    overflow: hidden;
   }
 
   .user-posts--start img {
@@ -171,5 +176,9 @@
     width: initial;
     margin: 0 0 55px;
     padding: 18px 8px 18px 27px;
+  }
+
+  .user-posts--start .user-posts__comment {
+    margin-left: 1px;
   }
 }
