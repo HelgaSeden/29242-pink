@@ -248,9 +248,9 @@
           <div class="container">
             <div class="editor__wrapper">
               <picture>
-                <source media="(min-width: 960px)" type="webp" srcset="img/webp/photo-road-desktop@1x.webp 1x, img/webp/photo-road-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)" type="webp" srcset="img/webp/photo-road-tablet@1x.webp 1x, img/webp/photo-road-tablet@2x.webp 2x">
-                <source type="webp" srcset="img/webp/photo-road-mobile@1x.webp, img/webp/photo-road-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" type="image/webp" srcset="img/webp/photo-road-desktop@1x.webp 1x, img/webp/photo-road-desktop@2x.webp 2x">
+                <source media="(min-width: 660px)" type="image/webp" srcset="img/webp/photo-road-tablet@1x.webp 1x, img/webp/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/photo-road-mobile@1x.webp, img/webp/photo-road-mobile@2x.webp 2x">
 
                 <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
@@ -258,9 +258,10 @@
               </picture>
               <div class="editor-filters">
                 <ul class="editor-filters__filter">
-                  <li class="editor-filters__filter-name">
+                  <li class="editor-filters__filter-name editor-filters__filter-name--active">
                     <svg width="48px" height="48px">
-                      <use xlink:href="img/sprite.svg#icon-crop"></use>
+                      <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
+                    </svg>
                     <span class="visually-hidden">Обрезать</span>
                     <div class="editor-filters__range editor-filters__range--crop">
                       <div class="editor-filters__bar"></div>
@@ -269,7 +270,7 @@
                   </li>
                   <li class="editor-filters__filter-name">
                     <svg width="48px" height="48px">
-                      <use xlink:href="img/sprite.svg#icon-fill"></use>
+                      <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
                     </svg>
                     <span class="visually-hidden">Контраст</span>
                     <div class="editor-filters__range editor-filters__range--fill">
@@ -279,7 +280,7 @@
                   </li>
                   <li class="editor-filters__filter-name">
                     <svg width="31.92px" height="31.92px">
-                      <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                      <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                     </svg>
                     <span class="visually-hidden">Насыщенность</span>
                     <div class="editor-filters__range editor-filters__range--contrast">

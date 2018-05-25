@@ -75,6 +75,21 @@
   display: flex;
   flex-direction: column-reverse;
 }
+.download-app__button {
+  text-align: center;
+  color: #ffffff;
+  border-color: #ffffff;
+  line-height: 1;
+}
+
+.download-app__button:hover {
+  background-color: @color-white;
+  color: @color-pink;
+}
+
+.download-app__button:active {
+  color: @color-pink-light;
+}
 
 @media (min-width: @tablet-width) {
   .download-app {
@@ -191,6 +206,7 @@
   }
 
   .download-app__right {
+    overflow: hidden;
     margin-top: 211px;
     margin-left: -59%;
     transform: translateX(27%);

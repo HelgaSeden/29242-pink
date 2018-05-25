@@ -257,6 +257,35 @@ textarea::placeholder {
   margin-top: 29px;
 }
 
+.button-form {
+  background-color: rgb(42, 171, 109);
+  width: 281px;
+  height: 64px;
+  border: none;
+  border-radius: 3px;
+  color: @color-white;
+  font-family: inherit;
+  font-size: @font-size-big;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-form:hover {
+  border: none;
+  background-color: rgb(28, 155, 94);
+}
+
+.button-form:active {
+  outline: none;
+  border: none;
+  color: rgb(97, 185, 143);
+}
+
+.button-form:focus {
+  outline: none;
+  border: none;
+}
+
 @media (min-width: @tablet-width) {
   .feedback-container__user-name {
     margin: 21px 0 0 0;
