@@ -66,6 +66,7 @@
                     <a href="#">
                       <svg width="42.084px" height="47.041px">
                         <use xlink:href="img/sprite.svg#icon-android"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="download-app__platform-icon download-app__platform-icon--windows">
@@ -84,7 +85,7 @@
             <picture>
               <source media="(min-width: 960px)" type="image/webp" srcset="img/webp/iphone-hand-desktop@1x.webp 1x, img/webp/iphone-hand-desktop@2x.webp 2x">
               <source media="(min-width: 660px)" type="image/webp"  srcset="img/webp/iphone-hand-tablet@1x.webp 1x, img/webp/iphone-hand-tablet@2x.webp 2x">
-              <source type="image/webp" src="img/webp/iphone-hand-mobile@1x.webp, img/webp/iphone-hand-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/iphone-hand-mobile@1x.webp, img/webp/iphone-hand-mobile@2x.webp 2x">
 
               <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
@@ -110,7 +111,7 @@
               </div>
               <div class="features__item features__item--image-second">
                 <h3 class="features__item features__item-title">Меняет мир вокруг</h3>
-                <p class="features__item features__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br>усилить эффект</p>
+                <p class="features__item features__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
               </div>
               <div class="features__item features__item--image-third">
                 <h3 class="features__item features__item-title">Заводит<br> новых друзей</h3>
@@ -123,26 +124,28 @@
 
       <section class="diagram">
         <div class="container">
-          <div class="diagram__left">
-            <svg class="diagram__timer diagram__timer--tablet" width="298px" height="345.097px">
-              <use xlink:href="img/sprite.svg#icon-timer"></use>
-            </svg>
-            <svg class="diagram__timer diagram__timer--desktop" width="298px" height="345.097px">
-              <use xlink:href="img/sprite.svg#icon-timer-desktop"></use>
-            </svg>
-            <svg class="diagram__diagram-fill diagram__diagram-fill--tablet" width="200px" height="253px">
-              <use xlink:href="img/sprite.svg#icon-diagram-fill"></use>
-            </svg>
-            <svg class="diagram__diagram-fill diagram__diagram-fill--desktop" width="300px" height="253px">
-              <use xlink:href="img/sprite.svg#icon-diagram-fill-desktop"></use>
-            </svg>
-          </div>
-          <div class="diagram__right">
-            <h2 class="diagram__title">
-              Эффект<br> на 24 часа!
-            </h2>
-            <p class="diagram__description">Британские ученые провели исследования и доказали,<br> что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="diagram__link" href="#">Узнать больше об исследовании</a>
+          <div class="diagram__container">
+            <div class="diagram__left">
+              <svg class="diagram__timer diagram__timer--tablet" width="298px" height="345.097px">
+                <use xlink:href="img/sprite.svg#icon-timer"></use>
+              </svg>
+              <svg class="diagram__timer diagram__timer--desktop" width="298px" height="345.097px">
+                <use xlink:href="img/sprite.svg#icon-timer"></use>
+              </svg>
+              <svg class="diagram__diagram-fill diagram__diagram-fill--tablet" width="200px" height="253px">
+                <use xlink:href="img/sprite.svg#icon-editor-diagram-fill"></use>
+              </svg>
+              <svg class="diagram__diagram-fill diagram__diagram-fill--desktop" width="300px" height="253px">
+                <use xlink:href="img/sprite.svg#icon-editor-diagram-fill"></use>
+              </svg>
+            </div>
+            <div class="diagram__right">
+              <h2 class="diagram__title">
+                Эффект<br> на 24 часа!
+              </h2>
+              <p class="diagram__description">Британские ученые провели исследования и доказали,<br> что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="diagram__link" href="#">Узнать больше об исследовании</a>
+            </div>
           </div>
         </div>
       </section>
@@ -288,7 +291,7 @@
       <div class="container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-          <ul class="contacts-list">
+          <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__item contacts__item-title">Звоните:</h3>
               <a class="contacts__item contacts__item-communications" href="+7(812)555-66-66">+7 (812) 555-66-66</a>
@@ -299,21 +302,21 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__item contacts__item-title">Приезжайте в гости:</h3>
-              <p class="contacts__item contacts__item-communications">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts__item contacts__item-communications contacts__item-communications--address">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
-          <div class="contacts__map">
-            <div class="container">
-              <div class="contacts__map-wrapper">
-                <div class="contacts__map-content"></div>
-              </div>
+        </div>
+        <div class="contacts__map">
+          <div class="contacts__map-wrapper">
+            <div class="contacts__map-content">
+              <iframe class="contacts__map-google" title="Месторасположение офиса" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.32089461614341!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524139109139" width="320" height="200" allowfullscreen=""></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--hidden-mobile">
       <div class="container">
         <div class="page-footer__wrapper">
           <a class="page-footer__logo" href="index.html">
@@ -327,7 +330,7 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--twitter" href="#">
-                  <svg class="social__icon social__icon--twitter"width="17.5px" height="14.663px">
+                  <svg class="social__icon social__icon--twitter" width="17.5px" height="14.663px">
                     <use xlink:href="img/sprite.svg#icon-twitter"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Твиттере</span>
@@ -364,6 +367,8 @@
       </div>
     </footer>
 
+    <script src="js/svg4everybody.js"></script>
+    <script src="js/picturefill.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
