@@ -52,6 +52,7 @@
 @media (min-width: @tablet-width) {
   .user-posts__panorama {
     width: 960px;
+    height: 509px;
     margin-left: -170px;
   }
 
@@ -61,15 +62,11 @@
     overflow: hidden;
   }
 
-  .user-posts--start img {
-    height: 509px;
-  }
-
   .user-posts--start .user-posts__wrapper {
     display: flex;
     flex-wrap: wrap;
     margin: -5px 0 50px 0;
-    padding: 24px 21px 18px 28px;
+    padding: 29px 21px 18px 28px;
   }
 
   .user-posts--start .user-posts__author {
@@ -99,10 +96,10 @@
 
   .user-posts:not(.user-posts--start) {
     width: 300px;
-    margin: 0 10px;
+    margin-right: 20px;
   }
 
-  .user-posts__photo img {
+  .user-posts__photo {
     height: 300px;
   }
 
@@ -110,9 +107,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 265px;
-    height: 113px;
-    margin: -2px 0 22px 0;
-    padding: 19px 8px 17px 29px;
+    min-height: 120px;
+    margin: -2px 0 21px 0;
+    padding: 26px 8px 10px 29px;
+  }
+
+  .user-posts__column {
+    margin-bottom: 25px;
   }
 
   .user-posts__like-container {
@@ -120,7 +121,7 @@
     justify-content: space-between;
     align-self: flex-end;
     width: 260px;
-    margin: 0 24px 5px -17px;
+    margin: -12px 0 0 -17px;
   }
 
   .user-posts__like {
@@ -151,12 +152,12 @@
     margin-left: 0;
   }
 
-  .user-posts--start {
-    overflow: hidden;
+  .user-posts__image {
+    height: 506px;
   }
 
-  .user-posts--start img {
-    height: 506px;
+  .user-posts--start {
+    overflow: hidden;
   }
 
   .user-posts--start .user-posts__wrapper {
@@ -168,12 +169,11 @@
     margin-left: 624px;
   }
 
-  .user-posts__photo img {
+  .user-posts__photo {
     height: 399px;
   }
 
   .user-posts__wrapper--wrap {
-    width: initial;
     margin: 0 0 55px;
     padding: 18px 8px 18px 27px;
   }

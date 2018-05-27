@@ -29,16 +29,16 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__site-list">
               <li class="main-nav__item">
-                <a href="index.html">Главная</a>
+                <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="photo.html">Фотографии</a>
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a>Конкурс</a>
+                <a class="main-nav__link">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -49,7 +49,7 @@
     <main class="page-main">
       <div class="page-main__title">
         <div class="container">
-          <h2 class="page-main__title page-main__title--heading-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h2 class="page-main__heading page-main__heading--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
         </div>
       </div>
       <div class="page-main__wrapper">
@@ -70,7 +70,7 @@
                     </li>
                     <li class="feedback-container__list-item">
                       <label class="feedback-container__name" for="first-name">Имя:</label>
-                      <input class="feedback-container__text" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
+                      <input class="feedback-container__text feedback-container__text--first-name" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя *">
                     </li>
                     <li class="feedback-container__list-item">
                       <label class="feedback-container__name" for="middle-name">Отчество:</label>
@@ -111,7 +111,7 @@
                 </div>
               </div>
               <div class="feedback-container__user-contacts">
-                <h3 class="feedback-container__title">Контактная информация</h3>
+                <h3 class="feedback-container__title feedback-container__title--user-contacts">Контактная информация</h3>
                 <ul class="feedback-container__list">
                   <li class="feedback-container__list-item feedback-container__list-item--phone">
                     <label class="feedback-container__name" for="phone-number">Номер телефона</label>
@@ -151,7 +151,7 @@
                   <input class="feedback-container__button-form" type="submit" value="Отправить форму">
                 </div>
                 <small class="feedback-container__field">
-                  <sup>*</sup> — обязательные <span>для заполнения</span> поля
+                  <sup class="feedback-container__superscript">*</sup> — обязательные <span class="feedback-container__footnote">для заполнения</span> поля
                 </small>
               </div>
             </form>
@@ -201,7 +201,7 @@
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg width="26.943px" height="34.09px">
+              <svg class="copyright__icon" width="26.943px" height="34.09px">
                 <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
               <span class="visually-hidden">HTML Academy</span>
