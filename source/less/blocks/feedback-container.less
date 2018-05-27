@@ -123,7 +123,11 @@
 
 .feedback-container__checkbox {
   position: absolute;
-  left: -9999;
+  left: -9999px;
+}
+
+.feedback-container__checkbox:focus + .feedback-container__description::before {
+  border-color: @color-dark-blue;
 }
 
 .feedback-container__checkbox:checked + .feedback-container__description::after {
@@ -174,7 +178,12 @@
 }
 
 .feedback-container__radio {
-  display: none;
+  position: absolute;
+  left: -9999px;
+}
+
+.feedback-container__radio:focus + .feedback-container__description-radio::before {
+  border-color: @color-dark-blue;
 }
 
 .feedback-container__description-radio::before {
