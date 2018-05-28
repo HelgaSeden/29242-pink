@@ -85,11 +85,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .features__wrapper .container {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   .features__title {
     display: flex;
     flex-direction: column;
@@ -159,10 +154,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .features__wrapper .container {
-    display: block;
-  }
-
   .features__wrapper--wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -276,7 +267,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background: url("../img/iphone-screen-3-desktop@2x.png") no-repeat;
-      background-size: auto 89%;
+      background-size: auto 100%;
     }
   }
 }
