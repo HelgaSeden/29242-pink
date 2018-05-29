@@ -1,4 +1,5 @@
 .price {
+  position: relative;
   overflow: hidden;
   background: url("../img/bg-triangle-white.svg") no-repeat;
   background-size: 100% auto;
@@ -8,12 +9,16 @@
 .price__toggle {
   .slider();
   cursor: pointer;
+  margin-right: 17px;
 }
 
 .price__toggles {
   display: flex;
   justify-content: space-between;
-  margin: 45px 132px 45px;
+  position: absolute;
+  margin: 45px -33px 45px;
+  top: 371px;
+  left: 51%;
 }
 
 .price__toggle--active {
