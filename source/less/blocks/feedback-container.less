@@ -69,14 +69,13 @@
 
 .feedback-container__text {
   width: 255px;
-  height: 56px;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 3px;
   margin-top: -1px;
   margin-bottom: 10px;
-  padding-left: 19px;
-  padding-top: 4px;
+  padding: 21px 0 19px 19px;
   line-height: 1;
+  font-size: @font-size-big;
 }
 
 .feedback-container__achievement {
@@ -147,12 +146,11 @@
 
 .feedback-container__contact {
   width: 257px;
-  height: 54px;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 3px;
   margin-bottom: 10px;
-  padding-left: 19px;
-  padding-top: 4px;
+  padding: 20px 0 19px 19px;
+  font-size: @font-size-big;
 }
 
 .feedback-container__platform {
@@ -246,6 +244,8 @@
   border: 2px solid rgb(229, 229, 229);
   border-radius: 3px;
   padding: 14px 20px;
+  font-size: 20px;
+  font-family: inherit;
 }
 
 .feedback-container__user-comment::placeholder {
@@ -310,7 +310,6 @@
 
   .feedback-container__text--first-name {
     width: 540px;
-    height: 54px;
     margin-bottom: 9px;
   }
 
@@ -396,8 +395,7 @@
 
   .feedback-container__user-contacts .feedback-container__contact {
     width: 416px;
-    height: 56px;
-    padding: 3px 0 0 17px;
+    padding: 18px 0 19px 17px;
   }
 
   .feedback-container__list-item--phone::after {
@@ -531,16 +529,15 @@
 
   .feedback-container__user-name .feedback-container__text {
     width: 317px;
-    padding: 3px 0 2px 19px;
+    padding: 20px 0 19px 19px;
   }
 
   .feedback-container__user-name .feedback-container__text--first-name {
     width: 359px;
-    padding: 5px 0 0 20px;
   }
 
   .feedback-container__platform {
-    width: 435px;
+    width: 431px;
     padding: 0;
     margin: 62px 0 0 68px;
   }
@@ -573,13 +570,13 @@
   }
 
   .feedback-container__user-contacts {
-    margin: 10px 10px 0 0;
+    margin: 10px 10px 8px;
   }
 
   .feedback-container__user-contacts .feedback-container__list {
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px 1px 67px;
+    padding: 40px 60px 1px 57px;
   }
 
   .feedback-container__user-contacts .feedback-container__list-item:last-child {
@@ -589,6 +586,7 @@
   .feedback-container__user-contacts .feedback-container__contact {
     width: 352px;
     padding-left: 18px;
+    padding-top: 20px;
   }
 
   .feedback-container__user-contacts .feedback-container__name {
@@ -596,33 +594,33 @@
   }
 
   .feedback-container__title--user-contacts {
-    margin-right: 339px;
+    margin-right: 348px;
     margin-left: 345px;
   }
 
   .feedback-container__list-item--email::after {
     width: 59px;
-    height: 59px;
+    height: 60px;
     margin-top: -40px;
     margin-left: 313px;
-    top: -3px;
+    top: -2px;
     background-size: 21px 14px;
     background-position: 18px 22px;
   }
 
   .feedback-container__list-item--phone::after {
     width: 59px;
-    height: 59px;
+    height: 60px;
     margin-top: -40px;
     margin-left: 313px;
-    top: 61px;
+    top: 62px;
     background-size: 27px 22px;
     background-position: 18px 18px;
   }
 
   .feedback-container__achievement {
-    margin: 65px 11px 0;
-    padding: 36px 7px 1px 20px;
+    margin: 56px 11px 0;
+    padding: 36px 0 0;
   }
 
   .feedback-container__achievement .feedback-container__title {
@@ -631,15 +629,25 @@
 
   .feedback-container__achievement .feedback-container__list {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
-    height: 170px;
-    padding-left: 33px;
+    min-height: 170px;
     padding-top: 27px;
+    padding-left: 20px;
   }
 
   .feedback-container__achievement .feedback-container__list-item {
     padding-bottom: 45px;
+    margin-right: -33px;
+    width: 270px;
+  }
+
+  .feedback-container__list-item--achievement:nth-child(1n) {
+    order: 1;
+  }
+
+  .feedback-container__list-item--achievement:nth-child(2n) {
+    order: 2;
   }
 
   .feedback-container__description {
@@ -659,7 +667,7 @@
   }
 
   .feedback-container__comment {
-    margin: 64px 11px 0 10px;
+    margin: 67px 11px 0 10px;
   }
 
   .feedback-container__comment .feedback-container__title {
